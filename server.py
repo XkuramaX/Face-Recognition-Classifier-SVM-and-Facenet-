@@ -222,7 +222,7 @@ filename_model = "SVM_model.sav"
 filename_index = "index.txt"
 
 try :
-    model = pickle.lead(open(filename_model, 'rb'))
+    model = pickle.load(open(filename_model, 'rb'))
     print("Model is loaded successfully")
 
     with open(filename_index, 'rb') as index_file:
